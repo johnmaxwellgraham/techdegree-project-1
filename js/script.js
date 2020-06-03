@@ -6,7 +6,7 @@ project 1 - A Random Quote Generator
 /**
  * Array of quotes objects with quote, source, citation, year properties
  */
-var quotesArr = [
+var quotes = [
   {
     quote: 'Like I told my last wife, I says, Honey, I never drive faster than I can see. Besides that, it’s all in the reflexes.',
     source: 'Jack Burton',
@@ -51,7 +51,7 @@ function getRandomQuote(arr) {
  * Prints random quote with all properties
 ***/
 function printQuote() {
-  var randomQuote = getRandomQuote(quotesArr);
+  var randomQuote = getRandomQuote(quotes);
   var quote = '<p class="quote">' + randomQuote.quote + '</p>';
   quote += '<p class="source">' + randomQuote.source;
 
